@@ -1,0 +1,39 @@
+.toAdoptCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  height: 40vh;
+  box-shadow: 0 0 1em #cccccc;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: $beige;
+
+  &__name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: $blueFontLogo;
+  }
+
+  &__species {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__btn {
+    background-color: $blueFontLogo;
+    color: $brunLogo;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s ease-out;
+  }
+  &__btn:hover {
+    cursor: pointer;
+    background-color: $beige;
+    color: $brunLogo;
+  }
+}
