@@ -1,0 +1,42 @@
+.associationCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  height: 40vh;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: $brunLogo;
+  background-color: $beige;
+  margin-top: 1.5em;
+
+  &__name {
+    color: $blueFontLogo;
+    font-size: 1.4em;
+    font-weight: bold;
+    background-color: $beige;
+  }
+
+  &__address,
+  &__postalCode,
+  &__city,
+  &__phone,
+  &__email {
+    background-color: $beige;
+  }
+
+  &__btn {
+    background-color: $brunLogo;
+    color: $beige;
+    border: none;
+    transition: 0.3s ease-out;
+    font-size: 1em;
+    padding: 0.2em;
+  }
+  &__btn:hover {
+    cursor: pointer;
+    background-color: $beige;
+    color: $brunLogo;
+    border: $brunLogo 1px solid;
+  }
+}

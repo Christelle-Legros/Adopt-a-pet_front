@@ -1,26 +1,58 @@
-.navbar ul {
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
-  grid-template-rows: 1fr;
-  background-color: $brunLogo;
-  color: $blueFontLogo;
-  font-weight: bold;
-  list-style: none;
-  text-align: center;
-  font-size: 1.5em;
-  align-items: center;
+.navbar {
+  ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    background-color: $brunLogo;
+    color: $blueFontLogo;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5em;
+    align-items: center;
 
-  li:hover {
+    a {
+      color: $blueFontLogo;
+    }
+
+    &__logo {
+      height: 250px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &__title:hover {
     color: $beige;
     transform: scaleX(1.1);
     transition: 0.3s ease-out;
   }
 
-  a {
-    color: $blueFontLogo;
+  &__login img {
+    height: 6vh;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
   }
 
-  img {
-    height: 150px;
+  &__login img:hover {
+    filter: grayscale(1);
+    cursor: pointer;
+  }
+
+  &__add {
+    border: none;
+    img {
+      height: 4vh;
+      position: absolute;
+      top: 7em;
+      right: 2.2em;
+    }
+  }
+
+  &__add img:hover {
+    cursor: pointer;
   }
 }
