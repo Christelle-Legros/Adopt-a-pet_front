@@ -1,9 +1,12 @@
-import React from "react";
-import { useState } from "react/cjs/react.production.min";
+import React, { useState } from "react";
 
 const LoginForm = () => {
-  // const [user, setUser] = useState("User");
-  // const [password, setPassword] = useState("Pswd");
+  const [user, setUser] = useState("");
+  const [password, setPassword] = useState("");
+
+  const Login = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <div className="loginForm">
@@ -12,13 +15,13 @@ const LoginForm = () => {
       </p>
       <input
         type="text"
-        // value={user}
         placeholder="Votre mail"
+        onChange={(e) => setUser(e.target.value)}
       />
       <input
         type="password"
-        // value={password}
         placeholder="Votre mot de passe"
+        onChange={(e) => setPassword(e.target.value)}
       />
 
       <button className="loginForm__btn">Log in</button>

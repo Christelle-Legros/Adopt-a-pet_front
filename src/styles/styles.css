@@ -1,1 +1,280 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  font-family: "Open Sans";
+  padding: 0;
+  margin: 0;
+  background-color: #5c4f56;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr 3fr;
+      grid-template-columns: 3fr 1fr 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  background-color: #5c4f56;
+  color: #00c2cb;
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar ul a {
+  color: #00c2cb;
+}
+
+.navbar ul__logo {
+  height: 250px;
+}
+
+.navbar ul__logo img {
+  height: 100%;
+}
+
+.navbar__title:hover {
+  color: #deccb4;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.navbar__login img {
+  height: 6vh;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+
+.navbar__login img:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+}
+
+.navbar__add {
+  border: none;
+}
+
+.navbar__add img {
+  height: 4vh;
+  position: absolute;
+  top: 7em;
+  right: 2.2em;
+}
+
+.navbar__add img:hover {
+  cursor: pointer;
+}
+
+.home {
+  background-color: #5c4f56;
+  color: #deccb4;
+  height: 100vh;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.home__presentationText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.home__pics {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home__pics img {
+  width: 30%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 1em #cccccc;
+          box-shadow: 0 0 1em #cccccc;
+  margin-bottom: 4em;
+  margin-top: 2em;
+}
+
+.toAdopt {
+  background-color: #5c4f56;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 4em;
+}
+
+.toAdoptCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20em;
+  height: 40vh;
+  -webkit-box-shadow: 0 0 1em #cccccc;
+          box-shadow: 0 0 1em #cccccc;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: #deccb4;
+}
+
+.toAdoptCard__name {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #00c2cb;
+}
+
+.toAdoptCard__species {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.toAdoptCard__description {
+  text-align: center;
+}
+
+.toAdoptCard__btn {
+  background-color: #00c2cb;
+  color: #5c4f56;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.toAdoptCard__btn:hover {
+  cursor: pointer;
+  background-color: #deccb4;
+  color: #5c4f56;
+}
+
+.associations__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 4em;
+}
+
+.associations__subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  color: #deccb4;
+}
+
+.associationCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20em;
+  height: 40vh;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: #5c4f56;
+  background-color: #deccb4;
+  margin-top: 1.5em;
+}
+
+.associationCard__name {
+  color: #00c2cb;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: #deccb4;
+}
+
+.associationCard__address, .associationCard__postalCode, .associationCard__city, .associationCard__phone, .associationCard__email {
+  background-color: #deccb4;
+}
+
+.associationCard__btn {
+  background-color: #5c4f56;
+  color: #deccb4;
+  border: none;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  font-size: 1em;
+  padding: 0.2em;
+}
+
+.associationCard__btn:hover {
+  cursor: pointer;
+  background-color: #deccb4;
+  color: #5c4f56;
+  border: #5c4f56 1px solid;
+}
+
+.loginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #5c4f56;
+}
+
+.loginForm__subtitle {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  color: #deccb4;
+}
+
+.loginForm input {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 2em;
+  background-color: #deccb4;
+}
+
+.loginForm__btn {
+  width: 100px;
+  height: 35px;
+  background-color: #00c2cb;
+}
+/*# sourceMappingURL=styles.css.map */
