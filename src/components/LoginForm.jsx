@@ -24,7 +24,7 @@ const LoginForm = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      <button className="loginForm__btn">Log in</button>
+      <button className="loginForm__btn">S'identifier</button>
     </div>
   );
 };

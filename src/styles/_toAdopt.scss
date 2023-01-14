@@ -1,4 +1,9 @@
-.toAdopt {
+.toAdopt select,
+label {
+  color: $beige;
+}
+
+.toAdoptGrid {
   background-color: $brunLogo;
   display: flex;
   justify-content: space-around;
